@@ -8,11 +8,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css"></head>
 <body>
-<header class="site"><div class="wrap header-inner">
+<header class="site">
+<div class="wrap header-inner">
 <a class="brand" href="index.html"><img src="assets/images/hero-christmas-feast.jpg" alt="The Tasty Recipe Co logo"><span><span class="wordmark">The Tasty Recipe <em>Co</em></span><span class="tagline">recipes worth gathering around</span></span></a>
-<nav aria-label="Categories"><a href="categories/quick-easy-recipes.html">Quick &amp; Easy Recipes</a> <a href="categories/lunch-dinner.html">Lunch &amp; Dinner</a> <a href="categories/desserts-baking.html">Desserts &amp; Baking</a> <a href="categories/air-fryer-healthy.html">Air Fryer &amp; Healthy</a> <a href="categories/christmas-holiday.html">Christmas &amp; Holiday</a> <a href="categories/breakfast-snacks.html">Breakfast &amp; Snacks</a></nav>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">☰ Menu</button>
 <a class="pin-btn" href="https://www.pinterest.com/thetastyrecipeco/" target="_blank" rel="noopener">📌 Follow on Pinterest</a>
-</div></header>
+</div>
+<nav class="main-nav" id="main-nav" aria-label="Categories"><div class="wrap nav-inner">
+<a href="index.html">Home</a>
+<a href="categories/quick-easy-recipes.html">Quick &amp; Easy Recipes</a>
+<a href="categories/lunch-dinner.html">Lunch &amp; Dinner</a>
+<a href="categories/desserts-baking.html">Desserts &amp; Baking</a>
+<a href="categories/air-fryer-healthy.html">Air Fryer &amp; Healthy</a>
+<a href="categories/christmas-holiday.html">Christmas &amp; Holiday</a>
+<a href="categories/breakfast-snacks.html">Breakfast &amp; Snacks</a>
+</div></nav>
+</header>
 <main class="page-narrow"><div class="wrap page"><h1>Contact</h1>
 <p>Questions, suggestions, or a recipe roundup you would like to see? We would love to hear from you.</p>
 <p>For now, the best way to reach The Tasty Recipe Co is through our Pinterest profile — <a href="https://www.pinterest.com/thetastyrecipeco/" target="_blank" rel="noopener">@thetastyrecipeco</a>. A contact email address will be added here soon.</p></div></main>
@@ -57,4 +68,5 @@
 <span>Recipes worth gathering around.</span>
 </div>
 </div></footer>
+<script src="assets/js/menu.js"></script>
 </body></html>
