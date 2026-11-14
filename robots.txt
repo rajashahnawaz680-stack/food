@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://the-tasty-recipe-co.vercel.app/sitemap.xml
