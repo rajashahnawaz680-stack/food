@@ -5,14 +5,29 @@ main branch (Vercel project "the-tasty-recipe-co", team "shahnawaz"). Homepage, 
 category pages, welcome article, sitemap.xml and robots.txt all verified live.
 
 ## What is ready
-- `index.html` — homepage: brand, hero, latest-articles grid, 6 category links, about blurb, footer
+- `index.html` — homepage: brand, full-bleed photo hero, stats bar, category pills,
+  latest-recipes card grid, image category cards, about teaser, Pinterest card, full footer
 - `posts/welcome-to-the-tasty-recipe-co.html` — test article (NOT a keyword roundup): proper
-  h1, meta, Article JSON-LD, breadcrumb Home › Recipes › Christmas & Holiday › title
-- `categories/*.html` — one page per category (6 total, see below)
+  h1, meta, Article JSON-LD, breadcrumb Home › Recipes › Christmas & Holiday › title,
+  byline, table of contents, tip box, Save to Pinterest link
+- `categories/*.html` — one page per category (6 total, see below), each with a photo
+  banner, card grid and the full footer
 - `about.html`, `contact.html`, `privacy.html`
 - `assets/css/style.css` — single stylesheet, mobile-responsive, no render-blocking bulk scripts
 - `sitemap.xml`, `robots.txt`
-- `assets/images/` — empty; article/pin images go here, each under 100 KB per the prompt
+- `assets/images/` — hero image + one generated photo per category (all under 100 KB),
+  plus `favicon.svg`. Article/pin images go here, each under 100 KB per the prompt.
+
+## Redesign (2026-11-14, user-ordered)
+Redesigned after the reference site https://food.destinymatrixfree.com/ (Bite Bliss
+Kitchen): same type of layout — category pills, photo recipe cards with tag + Save Pin,
+date/time meta, title, excerpt and a footer link row; article pages with byline, table
+of contents and tip boxes; a dark Pinterest card and a 4-column footer on every page.
+The colour theme is deliberately different (deep emerald green + warm gold on soft sage
+white, vs the reference's burnt orange + peach + cream), and the hero is different too:
+a full-bleed photo hero with a dark-green overlay and centred headline, not the
+reference's split text/photo hero. No text or images were copied from the reference —
+only the layout pattern; all copy, photos and the brand are The Tasty Recipe Co's own.
 
 ## Approved category list (given by the user 2026-11-14 — the verbatim list, 30 articles planned)
 1. Quick & Easy Recipes — 6 articles — `categories/quick-easy-recipes.html`
