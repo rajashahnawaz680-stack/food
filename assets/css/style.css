@@ -31,9 +31,8 @@ header.site{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 14
 .header-inner{display:flex;align-items:center;gap:20px;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
 .brand img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--accent-soft);box-shadow:0 2px 8px rgba(11,43,33,.15)}
-.brand .wordmark{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--accent);line-height:1.1}
-.brand .wordmark .wm-red{color:var(--pin)}
-.brand .wordmark em{color:var(--accent);font-style:italic}
+.brand .wordmark{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--ink);line-height:1.1}
+.brand .wordmark em{color:var(--gold);font-style:italic}
 .brand .tagline{display:block;font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .menu-btn{display:none;margin-left:auto;background:var(--accent);color:#fff;border:0;border-radius:10px;font-family:var(--sans);font-weight:700;font-size:.95rem;padding:10px 16px;cursor:pointer}
 .main-nav{background:var(--accent)}
