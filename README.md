@@ -29,17 +29,20 @@ a full-bleed photo hero with a dark-green overlay and centred headline, not the
 reference's split text/photo hero. No text or images were copied from the reference —
 only the layout pattern; all copy, photos and the brand are The Tasty Recipe Co's own.
 
-## Approved category list (given by the user 2026-11-14 — the verbatim list, 30 articles planned)
-1. Quick & Easy Recipes — 6 articles — `categories/quick-easy-recipes.html`
+## Approved category list (replaced by the user 2026-11-14 — the new verbatim list, 30 articles planned)
+1. Breakfast & Brunch — 5 articles — `categories/breakfast-brunch.html`
 2. Lunch & Dinner — 6 articles — `categories/lunch-dinner.html`
 3. Desserts & Baking — 5 articles — `categories/desserts-baking.html`
-4. Air Fryer & Healthy — 5 articles — `categories/air-fryer-healthy.html`
-5. Christmas & Holiday — 6 articles — `categories/christmas-holiday.html`
-6. Breakfast & Snacks — 2 articles — `categories/breakfast-snacks.html`
+4. Air Fryer Recipes — 5 articles — `categories/air-fryer-recipes.html`
+5. Healthy Recipes — 4 articles — `categories/healthy-recipes.html`
+6. Appetizers & Snacks — 5 articles — `categories/appetizers-snacks.html`
 
-These replace the earlier 7-category proposal. Every later article must use one of these
-exact categories. The article counts are the user's planned counts, not live articles —
-only the welcome test article is live on the site so far.
+These replace the previous 6-category list (Quick & Easy Recipes, Air Fryer & Healthy,
+Christmas & Holiday, Breakfast & Snacks are removed; Christmas/New Year roundups now live
+under Lunch & Dinner, Desserts & Baking, Appetizers & Snacks and Breakfast & Brunch).
+Every later article must use one of these exact categories. The article counts are the
+user's planned counts, not live articles — only the welcome test article is live on the
+site so far (filed under Lunch & Dinner).
 
 ## Live status (verified 2026-11-14)
 - Production URL confirmed: https://the-tasty-recipe-co.vercel.app (no longer provisional).
@@ -50,7 +53,7 @@ only the welcome test article is live on the site so far.
   account should use before any CSV schedule is built.
 
 ## Next steps (Phase 1A done — 2026-11-14)
-1. Categories approved by the user 2026-11-14 (6 categories, 30 articles planned). ✓
+1. Categories replaced by the user 2026-11-14 (new set of 6, 30 articles planned — Breakfast & Brunch 5, Lunch & Dinner 6, Desserts & Baking 5, Air Fryer Recipes 5, Healthy Recipes 4, Appetizers & Snacks 5). ✓
 2. Files committed to https://github.com/rajashahnawaz680-stack/food (main branch). ✓
 3. Repo imported in Vercel (project "the-tasty-recipe-co"), deployed from main. ✓
 4. Verified live: homepage, all 6 category pages, welcome article, sitemap.xml, robots.txt. ✓
