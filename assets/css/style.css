@@ -5,7 +5,7 @@
 :root{
   --ink:#2d211a; --muted:#7a6a5c; --accent:#c65d21; --accent-dark:#9a3b1e;
   --btn:#b4431f;
-  --gold:#e9a23b; --gold-soft:#fbeed3;
+  --gold:#e9a23b; --gold-soft:#fbeed3; --gold-deep:#b7791f;
   --accent-soft:#fbe9d3; --line:#eadfcb; --bg:#fdf7ee; --card:#fff;
   --footer:#2d211a; --footer-text:#e3d5be; --pin:#e60023;
   --shadow:0 8px 28px rgba(45,33,26,.10);
@@ -32,8 +32,9 @@ header.site{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 14
 .header-inner{display:flex;align-items:center;gap:20px;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
 .brand img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--accent-soft);box-shadow:0 2px 8px rgba(45,33,26,.15)}
-.brand .wordmark{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--ink);line-height:1.1}
-.brand .wordmark em{color:var(--gold);font-style:italic}
+.brand .wordmark{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--accent-dark);line-height:1.1;letter-spacing:-.01em}
+.brand .wordmark .wm-recipe{color:var(--accent)}
+.brand .wordmark em{color:var(--gold-deep);font-style:italic}
 .brand .tagline{display:block;font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .menu-btn{display:none;margin-left:auto;background:var(--btn);color:#fff;border:0;border-radius:10px;font-family:var(--sans);font-weight:700;font-size:.95rem;padding:10px 16px;cursor:pointer}
 .main-nav{background:var(--accent-dark)}
