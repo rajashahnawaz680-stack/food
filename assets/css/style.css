@@ -25,17 +25,21 @@ h2{font-size:1.9rem;margin:0 0 8px}
 .section-head p{color:var(--muted);margin:0}
 
 /* Header */
-header.site{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.98);border-bottom:1px solid var(--line);box-shadow:0 2px 14px rgba(11,43,33,.06)}
-.header-inner{display:flex;align-items:center;gap:28px;padding:14px 0;flex-wrap:wrap}
+/* Header — brand row on white, then a full-width green menu bar so the
+   site name and every category are impossible to miss */
+header.site{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 14px rgba(11,43,33,.08)}
+.header-inner{display:flex;align-items:center;gap:20px;padding:12px 0}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
-.brand img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--accent-soft);box-shadow:0 2px 8px rgba(11,43,33,.15)}
-.brand .wordmark{font-family:var(--serif);font-size:1.45rem;font-weight:700;color:var(--ink);line-height:1.1}
+.brand img{width:54px;height:54px;border-radius:50%;object-fit:cover;border:2px solid var(--accent-soft);box-shadow:0 2px 8px rgba(11,43,33,.15)}
+.brand .wordmark{font-family:var(--serif);font-size:1.6rem;font-weight:700;color:var(--ink);line-height:1.1}
 .brand .wordmark em{color:var(--gold);font-style:italic}
 .brand .tagline{display:block;font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-header.site nav{margin-left:auto;display:flex;flex-wrap:wrap;gap:2px 22px;align-items:center}
-header.site nav a{color:var(--ink);text-decoration:none;font-size:.92rem;font-weight:600}
-header.site nav a:hover{color:var(--accent)}
-.pin-btn{display:inline-flex;align-items:center;gap:7px;background:var(--pin);color:#fff;text-decoration:none;font-weight:700;font-size:.88rem;padding:10px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(230,0,35,.3)}
+.menu-btn{display:none;margin-left:auto;background:var(--accent);color:#fff;border:0;border-radius:10px;font-family:var(--sans);font-weight:700;font-size:.95rem;padding:10px 16px;cursor:pointer}
+.main-nav{background:var(--accent)}
+.nav-inner{display:flex;flex-wrap:wrap;gap:2px 6px;align-items:center}
+.main-nav a{color:#fff;text-decoration:none;font-size:.95rem;font-weight:700;padding:12px 13px;border-radius:8px}
+.main-nav a:hover{background:rgba(255,255,255,.16);color:#fff}
+.pin-btn{margin-left:auto;display:inline-flex;align-items:center;gap:7px;background:var(--pin);color:#fff;text-decoration:none;font-weight:700;font-size:.88rem;padding:10px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(230,0,35,.3)}
 .pin-btn:hover{background:#c4001e;color:#fff}
 
 /* Hero — full-bleed cinematic photo with deep-green overlay (different from the reference split hero) */
@@ -196,8 +200,15 @@ article.post p{color:#33413a}
   .stats-card strong{font-size:1.5rem}
   .stat .icon{font-size:1.1rem}
   .grid,.cat-grid{grid-template-columns:1fr}
-  header.site nav{margin-left:0}
   .header-inner{gap:14px}
+  .brand .wordmark{font-size:1.3rem}
+  .brand img{width:44px;height:44px}
+  .menu-btn{display:inline-flex}
+  .pin-btn{display:none}
+  .main-nav{display:none}
+  .main-nav.open{display:block}
+  .nav-inner{flex-direction:column;align-items:stretch;gap:0;padding-top:6px;padding-bottom:6px}
+  .main-nav a{padding:11px 6px;border-radius:6px}
   article.post h1{font-size:1.8rem}
   .banner h1{font-size:1.9rem}
   .section{padding:40px 0}
