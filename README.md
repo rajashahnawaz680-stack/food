@@ -1,7 +1,8 @@
-# The Tasty Recipe Co — Phase 1A site draft (NOT yet committed or deployed)
+# The Tasty Recipe Co — Phase 1A site (LIVE on Vercel)
 
-Prepared 2026-11-13 (Asia/Qyzylorda, 20:57 local) as a ready-to-commit static site for the
-Pinterest master prompt's Phase 1A. Nothing here has been pushed to GitHub or Vercel yet.
+Live site: https://the-tasty-recipe-co.vercel.app — deployed 2026-11-14 from this repo's
+main branch (Vercel project "the-tasty-recipe-co", team "shahnawaz"). Homepage, all 6
+category pages, welcome article, sitemap.xml and robots.txt all verified live.
 
 ## What is ready
 - `index.html` — homepage: brand, hero, latest-articles grid, 6 category links, about blurb, footer
@@ -25,26 +26,22 @@ These replace the earlier 7-category proposal. Every later article must use one 
 exact categories. The article counts are the user's planned counts, not live articles —
 only the welcome test article is live on the site so far.
 
-## BEFORE committing — 3 things to fix/confirm
-1. **Vercel production URL is PROVISIONAL.** `sitemap.xml` / `robots.txt` (and the welcome
-   article's canonical, currently omitted) use `https://the-tasty-recipe-co.vercel.app`.
-   Replace with the ACTUAL production URL once the repo is imported into Vercel, then
-   re-verify sitemap + robots live. Do not claim the site is live until that URL loads.
-2. **Pinterest account confirmed 2026-11-14:** The Tasty Recipe / @thetastyrecipeco
-   (https://www.pinterest.com/thetastyrecipeco/). Needed for Phase 2 warm-up, not for the
-   site build.
-3. **Timezone for Pinterest scheduling unconfirmed.** The prompt example says Asia/Karachi;
-   the user's system timezone is Asia/Qyzylorda (+05:00). Confirm which one the Pinterest
-   account should use before any CSV schedule is built.
+## Live status (verified 2026-11-14)
+- Production URL confirmed: https://the-tasty-recipe-co.vercel.app (no longer provisional).
+- Pinterest account: The Tasty Recipe / @thetastyrecipeco
+  (https://www.pinterest.com/thetastyrecipeco/). Needed for Phase 2 warm-up.
+- **Timezone for Pinterest scheduling unconfirmed.** The prompt example says Asia/Karachi;
+  the user's system timezone is Asia/Qyzylorda (+05:00). Confirm which one the Pinterest
+  account should use before any CSV schedule is built.
 
-## Next steps (Phase 1A order)
-1. Categories approved by the user 2026-11-14 (6 categories, 30 articles planned).
-2. Commit these files to https://github.com/rajashahnawaz680-stack/food (main branch).
-3. Import the repo in Vercel (signed in as rajashahnawaz680@gmail.com, team "shahnawaz",
-   Hobby plan), deploy from main, confirm the production URL loads.
-4. Verify live: homepage, all 6 category pages, welcome article, sitemap.xml, robots.txt.
-5. Only then start Phase 3 keyword research — Christmas first, then New Year
-   (per the user's 2026-11-14 direction; Thanksgiving is skipped).
+## Next steps (Phase 1A done — 2026-11-14)
+1. Categories approved by the user 2026-11-14 (6 categories, 30 articles planned). ✓
+2. Files committed to https://github.com/rajashahnawaz680-stack/food (main branch). ✓
+3. Repo imported in Vercel (project "the-tasty-recipe-co"), deployed from main. ✓
+4. Verified live: homepage, all 6 category pages, welcome article, sitemap.xml, robots.txt. ✓
+5. Next: Phase 3 keyword research + Phase 4 screening — Christmas first, then New Year
+   (per the user's 2026-11-14 direction; Thanksgiving is skipped). Keywords are still
+   unscreened candidates; no article starts before screening.
 
 ## What this draft deliberately does NOT do
 - No keyword article yet (one keyword at a time, user gives the keyword; next article
