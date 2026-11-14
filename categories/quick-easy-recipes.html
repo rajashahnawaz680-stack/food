@@ -20,7 +20,7 @@
 <p style="margin-top:16px"><span class="count">6 roundups planned</span></p>
 </div></section>
 <main><div class="wrap">
-<div class="grid">
+<div class="grid" data-paginate data-per-page="15" data-nav="pagination" data-showing="showing">
 <article class="card soon">
 <div class="card-media">
 <img src="../assets/images/cat-quick-easy.jpg" alt="Quick weeknight pasta with tomatoes, basil and parmesan" width="900" height="600">
@@ -34,6 +34,8 @@
 <div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="../index.html#latest">Latest recipes →</a></div>
 </article>
 </div>
+<nav class="pagination" id="pagination" aria-label="Recipe pages"></nav>
+<p class="showing" id="showing"></p>
 </div></main>
 
 <footer class="site"><div class="wrap">
@@ -77,4 +79,5 @@
 <span>Recipes worth gathering around.</span>
 </div>
 </div></footer>
+<script src="../assets/js/pagination.js"></script>
 </body></html>
