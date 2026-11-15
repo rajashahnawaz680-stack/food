@@ -191,6 +191,9 @@ article.post p{color:#4a3b2e}
 /* Simple pages */
 .page h1{font-size:2.2rem;margin:0 0 14px}
 .page p{color:#4a3b2e}
+.page h2{font-family:var(--serif);font-size:1.5rem;margin:34px 0 10px}
+.page ul{margin:0 0 16px;padding-left:22px}
+.page li{margin-bottom:6px;color:#4a3b2e}
 
 /* Pagination (Prev / page numbers / Next, like the reference recipe grid) */
 .pagination{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:34px}
