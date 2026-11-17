@@ -20,11 +20,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"The Tasty Recipe Co","url":"https://the-tasty-recipe-co.vercel.app/","logo":"https://the-tasty-recipe-co.vercel.app/assets/images/logo.jpg","description":"The Tasty Recipe Co shares easy recipe roundups — holiday feasts, easy dinners, desserts, breakfast and quick healthy bites — for real home cooks.","sameAs":["https://www.pinterest.com/thetastyrecipeco/"]}
+</script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <header class="site">
 <div class="wrap header-inner">
-<a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="The Tasty Recipe Co logo"><span><span class="wordmark">The Tasty <span class="wm-recipe">Recipe</span> <em>Co</em></span><span class="tagline">recipes worth gathering around</span></span></a>
+<a class="brand" href="index.html"><img src="assets/images/logo.jpg" alt="The Tasty Recipe Co logo" width="512" height="512"><span><span class="wordmark">The Tasty <span class="wm-recipe">Recipe</span> <em>Co</em></span><span class="tagline">recipes worth gathering around</span></span></a>
 <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav">☰ Menu</button>
 <div class="brand-actions">
 <button class="search-toggle" type="button" aria-label="Search recipes" aria-expanded="false" title="Search recipes">🔍</button>
@@ -38,33 +42,33 @@
 <input type="search" id="search-input" placeholder="Search recipes, categories, flavors…" aria-label="Search recipes" autocomplete="off">
 <button class="search-close" type="button" aria-label="Close search">✕</button>
 </div>
-<div class="search-results" id="search-results"></div>
+<div class="search-results" id="search-results" aria-live="polite"></div>
 </div>
 </div>
-<nav class="main-nav" id="main-nav" aria-label="Categories"><div class="wrap nav-inner">
+<nav class="main-nav" id="main-nav" aria-label="Main navigation"><div class="wrap nav-inner">
 <a href="index.html">Home</a>
-<a href="categories/breakfast-brunch.html">Breakfast &amp; Brunch</a>
-<a href="categories/lunch-dinner.html">Lunch &amp; Dinner</a>
-<a href="categories/desserts-baking.html">Desserts &amp; Baking</a>
-<a href="categories/air-fryer-recipes.html">Air Fryer Recipes</a>
-<a href="categories/healthy-recipes.html">Healthy Recipes</a>
-<a href="categories/appetizers-snacks.html">Appetizers &amp; Snacks</a>
+<a href="index.html#latest">Recipes</a>
+<a href="index.html#categories">Categories</a>
+<a href="index.html#seasonal">Holidays</a>
+<a href="about.html">About</a>
+<a class="nav-mobile-only" href="contact.html">Contact</a>
+<a class="nav-mobile-only" href="https://www.pinterest.com/thetastyrecipeco/" target="_blank" rel="noopener">Pinterest</a>
 </div></nav>
 </header>
 
-<section class="hero"><div class="wrap">
+<section class="hero" id="seasonal"><div class="wrap">
 <p class="eyebrow">✨ Christmas 2026 · Friday, December 25</p>
 <h1>Good food, <em>gathered</em> simply.</h1>
 <div class="hero-rule">✦</div>
 <p class="lede">The Tasty Recipe Co is a food blog built around recipe roundups for the moments that matter — a Christmas table, a busy weeknight, a slow Sunday brunch. Every roundup gathers real dishes with clear ideas for serving them.</p>
 <div class="hero-actions">
-<a class="btn light" href="#latest">Browse the latest recipes →</a>
-<a class="btn ghost-light" href="categories/lunch-dinner.html">Christmas &amp; holiday feasts</a>
+<a class="btn light" href="#latest">Explore Recipes →</a>
+<a class="btn ghost-light" href="#categories">Browse Categories →</a>
 </div>
 </div></section>
 
 
-<main><div class="wrap">
+<main id="main"><div class="wrap">
 
 <section class="section" style="padding-bottom:0">
 <div class="section-head">
@@ -87,11 +91,12 @@
 <div class="section-head" style="text-align:left;margin-left:0">
 <p class="eyebrow">Fresh from the kitchen</p>
 <h2>Latest recipes</h2>
+<p>More roundups are on the way — each one is published one at a time, starting with Christmas, then the New Year.</p>
 </div>
-<div class="grid" data-paginate data-per-page="15" data-nav="pagination" data-showing="showing">
+<div class="grid">
 <article class="card">
 <div class="card-media">
-<img src="assets/images/hero-christmas-feast.jpg" alt="A Christmas holiday feast table with roasted dishes, cookies, pies and desserts" width="900" height="600">
+<img src="assets/images/hero-christmas-feast.jpg" alt="A Christmas holiday feast table with roasted dishes, cookies, pies and desserts" width="900" height="600" loading="lazy" decoding="async">
 <span class="tag">Lunch &amp; Dinner</span>
 <a class="save-pin" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Fthe-tasty-recipe-co.vercel.app%2Fposts%2Fwelcome-to-the-tasty-recipe-co.html&amp;media=https%3A%2F%2Fthe-tasty-recipe-co.vercel.app%2Fassets%2Fimages%2Fhero-christmas-feast.jpg&amp;description=Welcome%20to%20The%20Tasty%20Recipe%20Co" target="_blank" rel="noopener">📌 Save Pin</a>
 </div>
@@ -102,141 +107,22 @@
 </div>
 <div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="posts/welcome-to-the-tasty-recipe-co.html">Get the Recipe →</a></div>
 </article>
-
-<article class="card soon">
-<div class="card-media">
-<img src="assets/images/cat-desserts-baking.jpg" alt="Freshly baked chocolate chip cookies and a small frosted cake on a cooling rack" width="900" height="600">
-<span class="tag">Desserts &amp; Baking</span>
 </div>
-<div class="card-body">
-<span class="soon-badge">Coming soon</span>
-<h3>Christmas Cookies Recipes</h3>
-<p>A festive roundup of Christmas cookies — classic, decorated, and made for gifting. Planned for the holiday season.</p>
-</div>
-<div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="categories/desserts-baking.html">See the category →</a></div>
-</article>
-
-<article class="card soon">
-<div class="card-media">
-<img src="assets/images/cat-lunch-dinner.jpg" alt="A roast chicken dinner with roasted potatoes and carrots on a serving platter" width="900" height="600">
-<span class="tag">Lunch &amp; Dinner</span>
-</div>
-<div class="card-body">
-<span class="soon-badge">Coming soon</span>
-<h3>Christmas Dinner Recipes</h3>
-<p>The main Christmas meal, covered — roasts, mains, and sides for a holiday table worth gathering around.</p>
-</div>
-<div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="categories/lunch-dinner.html">See the category →</a></div>
-</article>
-
-<article class="card soon">
-<div class="card-media">
-<img src="assets/images/cat-appetizers-snacks.jpg" alt="An appetizer platter with bruschetta, stuffed mushrooms, cheese and dips" width="900" height="600">
-<span class="tag">Appetizers &amp; Snacks</span>
-</div>
-<div class="card-body">
-<span class="soon-badge">Coming soon</span>
-<h3>Christmas Appetizers Recipes</h3>
-<p>Festive starters and party bites for the Christmas table. Planned for the holiday season.</p>
-</div>
-<div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="categories/appetizers-snacks.html">See the category →</a></div>
-</article>
-
-<article class="card soon">
-<div class="card-media">
-<img src="assets/images/hero-christmas-table.jpg" alt="An elegant Christmas dinner table with roast turkey and candles" width="900" height="600">
-<span class="tag">Lunch &amp; Dinner</span>
-</div>
-<div class="card-body">
-<span class="soon-badge">Coming soon</span>
-<h3>Christmas Crockpot Recipes</h3>
-<p>Slow-cooker Christmas dishes for a stress-free holiday table. Planned for the holiday season.</p>
-</div>
-<div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="categories/lunch-dinner.html">See the category →</a></div>
-</article>
-
-<article class="card soon">
-<div class="card-media">
-<img src="assets/images/hero-christmas-feast.jpg" alt="A Christmas holiday feast table with roasted dishes, cookies, pies and desserts" width="900" height="600">
-<span class="tag">Lunch &amp; Dinner</span>
-</div>
-<div class="card-body">
-<span class="soon-badge">Coming soon</span>
-<h3>Christmas Ham Recipes</h3>
-<p>Glazed and slow-cooked ham mains for the Christmas feast. Planned for the holiday season.</p>
-</div>
-<div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="categories/lunch-dinner.html">See the category →</a></div>
-</article>
-
-<article class="card soon">
-<div class="card-media">
-<img src="assets/images/cat-appetizers-snacks.jpg" alt="An appetizer platter with bruschetta, stuffed mushrooms, cheese and dips" width="900" height="600">
-<span class="tag">Appetizers &amp; Snacks</span>
-</div>
-<div class="card-body">
-<span class="soon-badge">Coming soon</span>
-<h3>New Year Appetizers Recipes</h3>
-<p>Party starters to ring in the New Year. Planned for the holiday season.</p>
-</div>
-<div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="categories/appetizers-snacks.html">See the category →</a></div>
-</article>
-
-<article class="card soon">
-<div class="card-media">
-<img src="assets/images/cat-lunch-dinner.jpg" alt="A roast chicken dinner with roasted vegetables" width="900" height="600">
-<span class="tag">Lunch &amp; Dinner</span>
-</div>
-<div class="card-body">
-<span class="soon-badge">Coming soon</span>
-<h3>New Year's Eve Dinner Recipes</h3>
-<p>The New Year's Eve main meal, covered. Planned for the holiday season.</p>
-</div>
-<div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="categories/lunch-dinner.html">See the category →</a></div>
-</article>
-
-<article class="card soon">
-<div class="card-media">
-<img src="assets/images/cat-desserts-baking.jpg" alt="Freshly baked chocolate chip cookies and a small frosted cake on a cooling rack" width="900" height="600">
-<span class="tag">Desserts &amp; Baking</span>
-</div>
-<div class="card-body">
-<span class="soon-badge">Coming soon</span>
-<h3>New Year Desserts Recipes</h3>
-<p>Sweet treats to celebrate the New Year. Planned for the holiday season.</p>
-</div>
-<div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="categories/desserts-baking.html">See the category →</a></div>
-</article>
-
-<article class="card soon">
-<div class="card-media">
-<img src="assets/images/cat-appetizers-snacks.jpg" alt="An appetizer platter with bruschetta, stuffed mushrooms, cheese and dips" width="900" height="600">
-<span class="tag">Appetizers &amp; Snacks</span>
-</div>
-<div class="card-body">
-<span class="soon-badge">Coming soon</span>
-<h3>New Year Party Food Recipes</h3>
-<p>Crowd-pleasing party food for New Year's Eve. Planned for the holiday season.</p>
-</div>
-<div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="categories/appetizers-snacks.html">See the category →</a></div>
-</article>
-</div>
-<nav class="pagination" id="pagination" aria-label="Recipe pages"></nav>
-<p class="showing" id="showing"></p>
 </section>
 
-<section class="section" style="padding-top:0">
+<section class="section" id="categories" style="padding-top:0">
 <div class="section-head">
 <p class="eyebrow">Browse by category</p>
 <h2>Find your table</h2>
 <p>Six categories, thirty roundups planned — from fast weeknight dinners to the Christmas feast.</p>
 </div>
 <div class="cat-grid">
-<div class="cat-card"><a href="categories/breakfast-brunch.html"><img src="assets/images/cat-breakfast-snacks.jpg" alt="Pancakes with berries, maple syrup and coffee" width="900" height="600"></a><div class="cat-body"><h3><a href="categories/breakfast-brunch.html">Breakfast &amp; Brunch</a></h3><p>Slow mornings and weekend brunch tables.</p><span class="count">5 articles planned</span></div></div>
-<div class="cat-card"><a href="categories/lunch-dinner.html"><img src="assets/images/cat-lunch-dinner.jpg" alt="A roast chicken dinner with roasted vegetables" width="900" height="600"></a><div class="cat-body"><h3><a href="categories/lunch-dinner.html">Lunch &amp; Dinner</a></h3><p>Mains for midday and evening tables.</p><span class="count">6 articles planned</span></div></div>
-<div class="cat-card"><a href="categories/desserts-baking.html"><img src="assets/images/cat-desserts-baking.jpg" alt="Freshly baked cookies and a frosted cake" width="900" height="600"></a><div class="cat-body"><h3><a href="categories/desserts-baking.html">Desserts &amp; Baking</a></h3><p>Cookies, cakes, pies and sweet bakes.</p><span class="count">5 articles planned</span></div></div>
-<div class="cat-card"><a href="categories/air-fryer-recipes.html"><img src="assets/images/cat-air-fryer-healthy.jpg" alt="Crispy air fryer chicken with roasted vegetables and dip" width="900" height="600"></a><div class="cat-body"><h3><a href="categories/air-fryer-recipes.html">Air Fryer Recipes</a></h3><p>Lighter, crisp dishes from the air fryer.</p><span class="count">5 articles planned</span></div></div>
-<div class="cat-card"><a href="categories/healthy-recipes.html"><img src="assets/images/cat-healthy.jpg" alt="A fresh healthy salad bowl with quinoa, avocado and chickpeas" width="900" height="600"></a><div class="cat-body"><h3><a href="categories/healthy-recipes.html">Healthy Recipes</a></h3><p>Fresh, light and wholesome everyday cooking.</p><span class="count">4 articles planned</span></div></div>
-<div class="cat-card"><a href="categories/appetizers-snacks.html"><img src="assets/images/cat-appetizers-snacks.jpg" alt="An appetizer platter with bruschetta, stuffed mushrooms, cheese and dips" width="900" height="600"></a><div class="cat-body"><h3><a href="categories/appetizers-snacks.html">Appetizers &amp; Snacks</a></h3><p>Starters, party bites and snacks for every gathering.</p><span class="count">5 articles planned</span></div></div>
+<div class="cat-card"><a href="categories/breakfast-brunch.html"><img src="assets/images/cat-breakfast-snacks.jpg" alt="Pancakes with berries, maple syrup and coffee" width="900" height="600" loading="lazy" decoding="async"></a><div class="cat-body"><h3><a href="categories/breakfast-brunch.html">Breakfast &amp; Brunch</a></h3><p>Slow mornings and weekend brunch tables.</p><span class="count">5 articles planned</span></div></div>
+<div class="cat-card"><a href="categories/lunch-dinner.html"><img src="assets/images/cat-lunch-dinner.jpg" alt="A roast chicken dinner with roasted vegetables" width="900" height="600" loading="lazy" decoding="async"></a><div class="cat-body"><h3><a href="categories/lunch-dinner.html">Lunch &amp; Dinner</a></h3><p>Mains for midday and evening tables.</p><span class="count">6 articles planned</span></div></div>
+<div class="cat-card"><a href="categories/desserts-baking.html"><img src="assets/images/cat-desserts-baking.jpg" alt="Freshly baked cookies and a frosted cake" width="900" height="600" loading="lazy" decoding="async"></a><div class="cat-body"><h3><a href="categories/desserts-baking.html">Desserts &amp; Baking</a></h3><p>Cookies, cakes, pies and sweet bakes.</p><span class="count">5 articles planned</span></div></div>
+<div class="cat-card"><a href="categories/air-fryer-recipes.html"><img src="assets/images/cat-air-fryer-healthy.jpg" alt="Crispy air fryer chicken with roasted vegetables and dip" width="900" height="600" loading="lazy" decoding="async"></a><div class="cat-body"><h3><a href="categories/air-fryer-recipes.html">Air Fryer Recipes</a></h3><p>Lighter, crisp dishes from the air fryer.</p><span class="count">5 articles planned</span></div></div>
+<div class="cat-card"><a href="categories/healthy-recipes.html"><img src="assets/images/cat-healthy.jpg" alt="A fresh healthy salad bowl with quinoa, avocado and chickpeas" width="1200" height="800" loading="lazy" decoding="async"></a><div class="cat-body"><h3><a href="categories/healthy-recipes.html">Healthy Recipes</a></h3><p>Fresh, light and wholesome everyday cooking.</p><span class="count">4 articles planned</span></div></div>
+<div class="cat-card"><a href="categories/appetizers-snacks.html"><img src="assets/images/cat-appetizers-snacks.jpg" alt="An appetizer platter with bruschetta, stuffed mushrooms, cheese and dips" width="1000" height="667" loading="lazy" decoding="async"></a><div class="cat-body"><h3><a href="categories/appetizers-snacks.html">Appetizers &amp; Snacks</a></h3><p>Starters, party bites and snacks for every gathering.</p><span class="count">5 articles planned</span></div></div>
 
 
 
@@ -248,7 +134,7 @@
 
 <section class="section" style="padding-top:0">
 <div class="about">
-<img src="assets/images/about-kitchen.jpg" alt="A chef's hands garnishing a plated dish on a marble kitchen counter" width="900" height="600">
+<img src="assets/images/about-kitchen.jpg" alt="A chef's hands garnishing a plated dish on a marble kitchen counter" width="1200" height="800" loading="lazy" decoding="async">
 <div>
 <p class="eyebrow">About the kitchen</p>
 <h2>Welcome to The Tasty Recipe Co</h2>
@@ -284,33 +170,35 @@
 <a class="pin-btn" href="https://www.pinterest.com/thetastyrecipeco/" target="_blank" rel="noopener">📌 Follow on Pinterest</a>
 </div>
 <div>
-<h3>Recipe Categories</h3>
+<h2>Explore</h2>
 <ul>
-<li><a href="categories/breakfast-brunch.html">Breakfast &amp; Brunch</a></li>
-<li><a href="categories/lunch-dinner.html">Lunch &amp; Dinner</a></li>
-<li><a href="categories/desserts-baking.html">Desserts &amp; Baking</a></li>
-<li><a href="categories/air-fryer-recipes.html">Air Fryer Recipes</a></li>
-<li><a href="categories/healthy-recipes.html">Healthy Recipes</a></li>
-<li><a href="categories/appetizers-snacks.html">Appetizers &amp; Snacks</a></li>
+<li><a href="index.html#latest">Recipes</a></li>
+<li><a href="index.html#categories">Categories</a></li>
+<li><a href="index.html#seasonal">Holidays</a></li>
 </ul>
 </div>
 <div>
-<h3>Quick Links</h3>
+<h2>Company</h2>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="index.html#latest">Latest Recipes</a></li>
 <li><a href="about.html">About Us</a></li>
 <li><a href="contact.html">Contact Us</a></li>
 </ul>
 </div>
 <div>
-<h3>Legal &amp; Info</h3>
+<h2>Legal</h2>
 <ul>
 <li><a href="privacy.html">Privacy Policy</a></li>
 <li><a href="terms.html">Terms of Service</a></li>
 <li><a href="cookies.html">Cookie Policy</a></li>
 <li><a href="disclaimer.html">Disclaimer</a></li>
+<li><a href="editorial-policy.html">Editorial Policy</a></li>
+<li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
 <li><a href="sitemap.xml">Sitemap</a></li>
+</ul>
+</div>
+<div>
+<h2>Connect</h2>
+<ul>
 <li><a href="https://www.pinterest.com/thetastyrecipeco/" target="_blank" rel="noopener">Pinterest Profile</a></li>
 </ul>
 </div>
