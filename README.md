@@ -2,35 +2,31 @@
 
 Live site: https://the-tasty-recipe-co.vercel.app — deployed 2026-11-14 from this repo's
 main branch (Vercel project "the-tasty-recipe-co", team "shahnawaz"). Homepage, all 6
-category pages, welcome article, sitemap.xml (16 URLs) and robots.txt all verified live.
+category pages, welcome article, sitemap.xml and robots.txt all verified live.
 
 ## What is ready
-- `index.html` — homepage: brand, full-bleed photo hero, category pills,
+- `index.html` — homepage: brand, full-bleed photo hero, stats bar, category pills,
   latest-recipes card grid, image category cards, about teaser, Pinterest card, full footer
-  (the stats bar was removed 2026-11-14)
 - `posts/welcome-to-the-tasty-recipe-co.html` — test article (NOT a keyword roundup): proper
-  h1, meta, Article JSON-LD, breadcrumb Home › Recipes › Lunch &amp; Dinner › title,
+  h1, meta, Article JSON-LD, breadcrumb Home › Recipes › Christmas & Holiday › title,
   byline, table of contents, tip box, Save to Pinterest link
 - `categories/*.html` — one page per category (6 total, see below), each with a photo
   banner, card grid and the full footer
-- `about.html`, `contact.html`, plus 6 legal pages: `privacy.html`, `terms.html`,
-  `cookies.html`, `disclaimer.html`, `editorial-policy.html`, `affiliate-disclosure.html`
-- `404.html` — custom Page Not Found page (not listed in sitemap.xml)
+- `about.html`, `contact.html`, `privacy.html`
 - `assets/css/style.css` — single stylesheet, mobile-responsive, no render-blocking bulk scripts
 - `sitemap.xml`, `robots.txt`
-- `assets/images/` — 10 images (2 hero photos, about-kitchen, one photo per category,
-  plus the logo badge), all under 100 KB, plus `favicon.svg`. Article/pin images go here,
-  each under 100 KB per the prompt.
+- `assets/images/` — hero image + one generated photo per category (all under 100 KB),
+  plus `favicon.svg`. Article/pin images go here, each under 100 KB per the prompt.
 
 ## Redesign (2026-11-14, user-ordered)
 Redesigned after the reference site https://food.destinymatrixfree.com/ (Bite Bliss
 Kitchen): same type of layout — category pills, photo recipe cards with tag + Save Pin,
 date/time meta, title, excerpt and a footer link row; article pages with byline, table
 of contents and tip boxes; a dark Pinterest card and a 4-column footer on every page.
-The colour theme is deliberately different (warm terracotta and paprika on cream — the
-Harvest Paprika theme, vs the reference's burnt orange + peach + cream), and the hero is
-different too: a full-bleed photo hero with a warm brown overlay and centred headline, not
-the reference's split text/photo hero. No text or images were copied from the reference —
+The colour theme is deliberately different (deep emerald green + warm gold on soft sage
+white, vs the reference's burnt orange + peach + cream), and the hero is different too:
+a full-bleed photo hero with a dark-green overlay and centred headline, not the
+reference's split text/photo hero. No text or images were copied from the reference —
 only the layout pattern; all copy, photos and the brand are The Tasty Recipe Co's own.
 
 ## Approved category list (replaced by the user 2026-11-14 — the new verbatim list, 30 articles planned)
@@ -68,8 +64,7 @@ site so far (filed under Lunch & Dinner).
 ## What this draft deliberately does NOT do
 - No keyword article yet (one keyword at a time, user gives the keyword; next article
   only starts after this test article is live-verified).
-- 10 generated images now live in `assets/images/` (hero, about, one per category, logo
-  badge); no competitor photos downloaded — per the main chat, the prompt's
+- No images yet, and no competitor photos downloaded — per the main chat, the prompt's
   Phase 5 competitor-photo method will NOT be used as written; licensed/generated images
   with credits instead.
 - No Pinterest profile/board/domain changes; domain claim stays HELD until the user
