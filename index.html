@@ -93,7 +93,7 @@
 <h2>Latest recipes</h2>
 <p>More roundups are on the way — each one is published one at a time, starting with Christmas, then the New Year.</p>
 </div>
-<div class="grid">
+<div class="grid" data-paginate data-per-page="15" data-nav="pagination" data-showing="showing">
 <article class="card">
 <div class="card-media">
 <img src="assets/images/christmas-appetizers-crowd-hero.jpg" alt="A festive Christmas appetizer spread for a crowd with bruschetta, cheese, cured meats, dips and rosemary on a holiday table" width="900" height="600" loading="lazy" decoding="async">
@@ -134,6 +134,8 @@
 <div class="card-foot"><span class="by">The Tasty Recipe Co</span><a href="posts/no-bake-christmas-desserts-for-a-crowd.html">Get the Recipe →</a></div>
 </article>
 </div>
+<nav class="pagination" id="pagination" aria-label="Recipe pages"></nav>
+<p class="showing" id="showing"></p>
 </section>
 
 <section class="section" id="categories" style="padding-top:0">
