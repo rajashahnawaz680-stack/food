@@ -29,7 +29,7 @@
     q = q.trim().toLowerCase();
     if (q.length < 2) { results.classList.remove('show'); results.innerHTML = ''; return; }
     var matches = RECIPES.filter(function (r) {
-      return (r.t + ' ' + r.c).toLowerCase().indexOf(q) !== -1;
+      return (r.t + ' ' + r.c + ' ' + r.d).toLowerCase().indexOf(q) !== -1;
     }).slice(0, 8);
     if (!matches.length) {
       results.innerHTML = '<div class="no-result">No recipes found &mdash; try another search or <a class="no-result-link" href="' + prefix + 'index.html#categories">browse our categories</a>.</div>';
