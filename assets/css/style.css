@@ -103,18 +103,19 @@ header.site{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 14
 
 /* Recipe cards (reference style: photo top, tag + Save Pin over photo, meta, title, excerpt, footer link) */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:8px}
-.card{background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 4px 18px rgba(45,33,26,.07);transition:transform .18s ease,box-shadow .18s ease;display:flex;flex-direction:column}
+.card{position:relative;background:var(--card);border-radius:18px;overflow:hidden;box-shadow:0 4px 18px rgba(45,33,26,.07);transition:transform .18s ease,box-shadow .18s ease;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .card-media{position:relative}
 .card-media img{width:100%;aspect-ratio:4/3;object-fit:cover}
 .tag{position:absolute;top:14px;left:14px;background:#fff;color:var(--accent-dark);font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;padding:5px 12px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.18)}
-.save-pin{position:absolute;top:14px;right:14px;background:var(--pin);color:#fff;font-size:.76rem;font-weight:700;text-decoration:none;padding:6px 12px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+.save-pin{position:absolute;top:14px;right:14px;z-index:2;background:var(--pin);color:#fff;font-size:.76rem;font-weight:700;text-decoration:none;padding:6px 12px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.25)}
 .save-pin:hover{background:#c4001e;color:#fff}
 .card-body{padding:20px 22px 16px;flex:1}
 .meta{font-size:.85rem;color:var(--muted);margin:0 0 8px}
 .card h3{font-size:1.28rem;margin:0 0 8px}
 .card h3 a{color:var(--ink);text-decoration:none}
 .card h3 a:hover{color:var(--accent)}
+.card h3 a::after{content:"";position:absolute;inset:0}
 .card p{margin:0;color:var(--muted);font-size:.96rem}
 .card-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding:14px 22px}
 .card-foot .by{font-size:.85rem;font-weight:700;color:var(--muted)}
