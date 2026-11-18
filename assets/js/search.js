@@ -8,6 +8,7 @@
     { t: 'Christmas Crockpot', c: 'Lunch & Dinner', u: 'categories/lunch-dinner.html', d: 'Planned roundup — see the Lunch & Dinner category.' },
     { t: 'Christmas Ham', c: 'Lunch & Dinner', u: 'posts/christmas-ham-recipes.html', d: '12 glazed hams for the holiday table — brown sugar, honey, pineapple, slow cooker and more.' },
     { t: 'Christmas Prime Rib', c: 'Lunch & Dinner', u: 'posts/christmas-prime-rib-recipes.html', d: '12 prime rib roasts for the holiday table — garlic herb, reverse sear, horseradish crust and more.' },
+    { t: 'Christmas Stuffing', c: 'Lunch & Dinner', u: 'posts/christmas-stuffing-recipes.html', d: '12 stuffing recipes for the holiday table — classic bread, sausage and herb, cornbread and more.' },
     { t: 'New Year Appetizers', c: 'Appetizers & Snacks', u: 'categories/appetizers-snacks.html', d: 'Planned roundup — see the Appetizers & Snacks category.' },
     { t: "New Year's Eve Dinner", c: 'Lunch & Dinner', u: 'categories/lunch-dinner.html', d: 'Planned roundup — see the Lunch & Dinner category.' },
     { t: 'New Year Desserts', c: 'Desserts & Baking', u: 'categories/desserts-baking.html', d: 'Planned roundup — see the Desserts & Baking category.' },
