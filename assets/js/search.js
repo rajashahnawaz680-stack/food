@@ -3,16 +3,6 @@
    a short description for each result. */
 (function () {
   var RECIPES = [
-    { t: 'Christmas Cookies', c: 'Desserts & Baking', u: 'categories/desserts-baking.html', d: 'Planned roundup — see the Desserts & Baking category.' },
-    { t: 'Christmas Appetizers', c: 'Appetizers & Snacks', u: 'categories/appetizers-snacks.html', d: 'Planned roundup — see the Appetizers & Snacks category.' },
-    { t: 'Christmas Crockpot', c: 'Lunch & Dinner', u: 'categories/lunch-dinner.html', d: 'Planned roundup — see the Lunch & Dinner category.' },
-    { t: 'Christmas Ham', c: 'Lunch & Dinner', u: 'posts/christmas-ham-recipes.html', d: '12 glazed hams for the holiday table — brown sugar, honey, pineapple, slow cooker and more.' },
-    { t: 'Christmas Prime Rib', c: 'Lunch & Dinner', u: 'posts/christmas-prime-rib-recipes.html', d: '12 prime rib roasts for the holiday table — garlic herb, reverse sear, horseradish crust and more.' },
-    { t: 'Christmas Stuffing', c: 'Lunch & Dinner', u: 'posts/christmas-stuffing-recipes.html', d: '12 stuffing recipes for the holiday table — classic bread, sausage and herb, cornbread and more.' },
-    { t: 'New Year Appetizers', c: 'Appetizers & Snacks', u: 'categories/appetizers-snacks.html', d: 'Planned roundup — see the Appetizers & Snacks category.' },
-    { t: "New Year's Eve Dinner", c: 'Lunch & Dinner', u: 'categories/lunch-dinner.html', d: 'Planned roundup — see the Lunch & Dinner category.' },
-    { t: 'New Year Desserts', c: 'Desserts & Baking', u: 'categories/desserts-baking.html', d: 'Planned roundup — see the Desserts & Baking category.' },
-    { t: 'New Year Party Food', c: 'Appetizers & Snacks', u: 'categories/appetizers-snacks.html', d: 'Planned roundup — see the Appetizers & Snacks category.' },
     { t: 'Welcome to The Tasty Recipe Co', c: 'Lunch & Dinner', u: 'posts/welcome-to-the-tasty-recipe-co.html', d: 'What this kitchen is for, and what is coming first.' },
     { t: 'Breakfast & Brunch', c: 'Recipe category', u: 'categories/breakfast-brunch.html', d: 'Browse roundups in this category.' },
     { t: 'Lunch & Dinner', c: 'Recipe category', u: 'categories/lunch-dinner.html', d: 'Browse roundups in this category.' },
