@@ -3,7 +3,9 @@
    a short description for each result. */
 (function () {
   var RECIPES = [
-    { t: 'Welcome to The Tasty Recipe Co', c: 'Lunch & Dinner', u: 'posts/welcome-to-the-tasty-recipe-co.html', d: 'What this kitchen is for, and what is coming first.' },
+    { t: '35+ Easy Christmas Appetizers for a Crowd', c: 'Appetizers & Snacks', u: 'posts/easy-christmas-appetizers-for-a-crowd.html', d: '35+ easy appetizers for a crowd — dips, bites, cheese boards and warm starters.' },
+    { t: '30+ Christmas Cookie Recipes Everyone Will Love', c: 'Desserts & Baking', u: 'posts/christmas-cookie-recipes.html', d: '30+ Christmas cookies everyone will love — classic, chocolate, spiced, filled and decorated.' },
+    { t: '25+ No-Bake Christmas Desserts for a Crowd', c: 'Desserts & Baking', u: 'posts/no-bake-christmas-desserts-for-a-crowd.html', d: '25+ no-bake Christmas desserts for a crowd — truffles, cheesecakes, bars and treats.' },
     { t: 'Breakfast & Brunch', c: 'Recipe category', u: 'categories/breakfast-brunch.html', d: 'Browse roundups in this category.' },
     { t: 'Lunch & Dinner', c: 'Recipe category', u: 'categories/lunch-dinner.html', d: 'Browse roundups in this category.' },
     { t: 'Desserts & Baking', c: 'Recipe category', u: 'categories/desserts-baking.html', d: 'Browse roundups in this category.' },
