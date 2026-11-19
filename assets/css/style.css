@@ -31,7 +31,7 @@ h2{font-size:1.9rem;margin:0 0 8px}
 .section-head p{color:var(--muted);margin:0}
 
 /* Announcement bar — full-width paprika strip above the sticky header */
-.announce-bar{background:var(--accent-dark);color:#fdf7ee;text-align:center;padding:9px 22px}
+.announce-bar{background:var(--footer);color:#fdf7ee;text-align:center;padding:9px 22px}
 .announce-bar p{margin:0;font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
 
 /* Header — centered brand row (search left, logo center, Pinterest right),
@@ -161,8 +161,9 @@ header.site{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 2px 14
 
 /* Footer */
 footer.site{background:var(--footer);color:var(--footer-text);padding:56px 0 0;margin-top:0;border-top:3px solid var(--gold)}
-.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr 1fr;gap:36px;padding-bottom:44px}
+.footer-grid{display:grid;grid-template-columns:1.6fr 1.1fr 1fr 1.2fr;gap:36px;padding-bottom:44px}
 .footer-grid h2{font-family:var(--sans);font-size:.92rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#fff;margin:0 0 16px}
+.footer-grid h2::after{content:"";display:block;width:28px;height:2px;background:var(--gold);margin-top:10px}
 .footer-grid p{font-size:.93rem;margin:0 0 18px}
 .footer-grid ul{list-style:none;margin:0;padding:0}
 .footer-grid li{margin-bottom:9px}
