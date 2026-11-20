@@ -266,3 +266,23 @@ article.post p{color:#4a3b2e}
   .section{padding:40px 0}
   .footer-grid{grid-template-columns:1fr}
 }
+
+/* Header dropdown menus (Recipes / Holidays) */
+.nav-drop{position:relative;display:inline-flex}
+.nav-drop-btn{color:var(--ink);background:none;border:0;cursor:pointer;font-family:var(--sans);font-size:.82rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:13px 14px;border-radius:8px}
+.nav-drop-btn:hover{background:var(--bg);color:var(--accent)}
+.nav-drop-menu{display:none;position:absolute;top:100%;left:0;min-width:230px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:6px;z-index:50}
+.nav-drop:hover .nav-drop-menu,.nav-drop:focus-within .nav-drop-menu{display:block}
+.nav-drop-menu a{display:block;padding:10px 12px;border-radius:8px}
+.nav-drop-menu a:hover{background:var(--bg)}
+/* Archive filter buttons */
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.filter-btn{border:1.5px solid var(--line);background:#fff;color:var(--ink);font-family:var(--sans);font-weight:700;font-size:.85rem;padding:8px 14px;border-radius:999px;cursor:pointer}
+.filter-btn:hover{border-color:var(--gold)}
+.filter-btn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (max-width:720px){
+.nav-drop{display:block}
+.nav-drop-btn{width:100%;text-align:left;padding:11px 6px}
+.nav-drop-menu{display:block;position:static;box-shadow:none;border:0;padding:0 0 0 14px}
+.nav-drop-menu a{padding:9px 6px}
+}
