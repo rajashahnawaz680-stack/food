@@ -24,7 +24,7 @@
     {
       "@type": "CollectionPage",
       "@id": "https://the-tasty-recipe-co.vercel.app/recipes.html",
-      "name": "All Recipes",
+      "name": "All Recipes & Food Collections",
       "description": "Every published recipe roundup from The Tasty Recipe Co.",
       "isPartOf": {
         "@id": "https://the-tasty-recipe-co.vercel.app/#website"
@@ -145,7 +145,7 @@
 </header>
 <section class="banner"><img class="bg" src="assets/images/hero-christmas-table.jpg" alt="A Christmas dinner table with roast turkey, candles and golden light" width="1200" height="800"><div class="wrap">
 <p class="breadcrumb" style="color:#fbf3e4"><a href="index.html" style="color:#fbf3e4">Home</a> › All Recipes</p>
-<h1>All Recipes</h1>
+<h1>All Recipes &amp; Food Collections</h1>
 <p>Every published recipe roundup in one place — Christmas and New Year's appetizers, cookies, desserts, breakfasts, side dishes and air fryer recipes. Filter by category below, or browse the full list.</p>
 <p style="margin-top:16px"><span class="count">9 roundups published</span></p>
 </div></section>
@@ -284,6 +284,7 @@
   var btns=document.querySelectorAll('.filter-btn');
   var cards=document.querySelectorAll('#archive-grid .card');
   var showing=document.getElementById('archive-showing');
+  var h1=document.querySelector('.banner h1');
   function apply(cat, season){
     var n=0;
     cards.forEach(function(c){
@@ -296,6 +297,9 @@
     else if(cat==='all'){ showing.textContent='Showing '+n+' roundups'; }
     else { showing.textContent='Showing '+n+' roundup'+(n===1?'':'s')+' in '+cat; }
     if(n===0){ showing.textContent+=' — no roundups in this category yet. Try another category.'; }
+    if(season==='christmas'){ h1.textContent='Christmas Recipes & Collections'; }
+    else if(season==='new-year'){ h1.textContent="New Year's Recipes & Collections"; }
+    else { h1.textContent='All Recipes & Food Collections'; }
     btns.forEach(function(b){ b.classList.toggle('active', b.dataset.filter===cat && !season); });
   }
   btns.forEach(function(b){ b.addEventListener('click', function(){ apply(b.dataset.filter, null); }); });
@@ -308,24 +312,24 @@
 <h2>More from The Tasty Recipe Co</h2>
 <p>Browse the other recipe categories:</p>
 <ul>
-<li><a href="breakfast-brunch.html">Breakfast &amp; Brunch</a></li>
-<li><a href="lunch-dinner.html">Lunch &amp; Dinner</a></li>
-<li><a href="desserts-baking.html">Desserts &amp; Baking</a></li>
-<li><a href="air-fryer-recipes.html">Air Fryer Recipes</a></li>
-<li><a href="healthy-recipes.html">Healthy Recipes</a></li>
+<li><a href="categories/breakfast-brunch.html">Breakfast &amp; Brunch</a></li>
+<li><a href="categories/lunch-dinner.html">Lunch &amp; Dinner</a></li>
+<li><a href="categories/desserts-baking.html">Desserts &amp; Baking</a></li>
+<li><a href="categories/air-fryer-recipes.html">Air Fryer Recipes</a></li>
+<li><a href="categories/healthy-recipes.html">Healthy Recipes</a></li>
+<li><a href="categories/appetizers-snacks.html">Appetizers &amp; Snacks</a></li>
 </ul>
 </section>
 <section class="section" style="padding-top:0">
 <div class="news">
 <div>
-<h2>Never miss a roundup</h2>
-<p>Follow @thetastyrecipeco on Pinterest to save each new roundup for later and be first to the table when the next one goes live.</p>
-<a class="pin-btn" href="https://www.pinterest.com/thetastyrecipeco/" target="_blank" rel="noopener">📌 Follow on Pinterest</a>
+<h2>Save Your Favorite Food Ideas on Pinterest</h2>
+<p>Discover delicious recipes, seasonal collections and food inspiration to save for later.</p>
+<a class="pin-btn" href="https://www.pinterest.com/thetastyrecipeco/" target="_blank" rel="noopener">📌 Follow The Tasty Recipe Co</a>
 </div>
 <div class="pin-side">
 <div class="pin-big">📌</div>
-<h3>Save ideas on Pinterest</h3>
-<p>Follow @thetastyrecipeco and save every roundup to your own boards.</p>
+<p>@thetastyrecipeco</p>
 </div>
 </div>
 </section>
