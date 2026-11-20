@@ -293,11 +293,3 @@ article.post p{color:#4a3b2e}
 .safety-table th,.safety-table td{border:1px solid var(--line);padding:9px 12px;text-align:left}
 .safety-table th{background:var(--accent-soft)}
 
-/* Seasonal collections (homepage) */
-.season-group h3{margin:22px 0 4px;font-size:1.25rem}
-.season-list{display:grid;gap:10px;margin-top:12px}
-.season-item{display:flex;justify-content:space-between;gap:14px;align-items:baseline;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
-.season-item a{font-weight:600;color:var(--ink);text-decoration:none}
-.season-item a:hover{color:var(--accent)}
-.season-item span{color:var(--muted);font-size:.9rem;white-space:nowrap}
-@media(max-width:720px){.season-item{flex-direction:column;gap:2px}.season-item span{white-space:normal}}
