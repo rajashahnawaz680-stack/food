@@ -12,6 +12,7 @@
     { t: '25+ Easy New Year's Eve Appetizers for a Crowd', c: 'Appetizers & Snacks', u: 'posts/easy-new-years-eve-appetizers-for-a-crowd.html', d: '25+ easy New Year's Eve appetizers for a crowd — bite-size party snacks, dips and finger foods for ringing in the New Year.' },
     { t: '30+ Vintage Christmas Cookie Recipes', c: 'Desserts & Baking', u: 'posts/vintage-christmas-cookie-recipes.html', d: '30+ vintage Christmas cookie recipes — old-fashioned cookies from grandma's kitchen, from spritz and snickerdoodles to molasses and jam thumbprints.' },
     { t: '25+ Christmas Snowball Cookie Recipes', c: 'Desserts & Baking', u: 'posts/christmas-snowball-cookie-recipes.html', d: '25+ Christmas snowball cookie recipes — buttery, melt-in-your-mouth snowball cookies in every flavor, rolled in powdered sugar.' },
+    { t: 'All Recipes', c: 'Recipe archive', u: 'recipes.html', d: 'Browse every published roundup in one place.' },
     { t: 'Breakfast & Brunch', c: 'Recipe category', u: 'categories/breakfast-brunch.html', d: 'Browse roundups in this category.' },
     { t: 'Lunch & Dinner', c: 'Recipe category', u: 'categories/lunch-dinner.html', d: 'Browse roundups in this category.' },
     { t: 'Desserts & Baking', c: 'Recipe category', u: 'categories/desserts-baking.html', d: 'Browse roundups in this category.' },
