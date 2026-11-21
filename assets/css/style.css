@@ -265,7 +265,7 @@ article.post p{color:#4a3b2e}
   .pin-btn .pin-short{display:inline}
   .search-toggle{width:38px;height:38px}
   .main-nav{display:none}
-  .main-nav.open{display:block}
+  .main-nav.open{display:block;max-height:calc(100vh - 64px);max-height:calc(100dvh - 64px);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
   .nav-mobile-only{display:block}
   .nav-inner{flex-direction:column;align-items:stretch;gap:0;padding-top:6px;padding-bottom:6px}
   .main-nav a{padding:11px 6px;border-radius:6px}
