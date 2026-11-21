@@ -1,6 +1,6 @@
 # The Tasty Recipe Co — Phase 1A site (LIVE on Vercel)
 
-Live site: https://the-tasty-recipe-co.vercel.app — deployed 2026-11-14 from this repo's
+Live site: https://thetastyrecipeco.vercel.app — deployed 2026-11-14 from this repo's
 main branch (Vercel project "the-tasty-recipe-co", team "shahnawaz"). Homepage, all 6
 category pages, welcome article, sitemap.xml (16 URLs) and robots.txt all verified live.
 
@@ -49,7 +49,7 @@ user's planned counts, not live articles — only the welcome test article is li
 site so far (filed under Lunch & Dinner).
 
 ## Live status (verified 2026-11-14)
-- Production URL confirmed: https://the-tasty-recipe-co.vercel.app (no longer provisional).
+- Production URL confirmed: https://thetastyrecipeco.vercel.app (no longer provisional).
 - Pinterest account: The Tasty Recipe / @thetastyrecipeco
   (https://www.pinterest.com/thetastyrecipeco/). Needed for Phase 2 warm-up.
 - **Timezone for Pinterest scheduling unconfirmed.** The prompt example says Asia/Karachi;
