@@ -11,7 +11,7 @@
   function setOpen(open) {
     nav.classList.toggle('open', open);
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    btn.textContent = open ? '\u2715 Close' : '\u2630 Menu';
+    btn.innerHTML = open ? '\u2715 <span class="menu-label">Close</span>' : '\u2630 <span class="menu-label">Menu</span>';
     document.body.style.overflow = open ? 'hidden' : '';
   }
 
@@ -26,5 +26,8 @@
   });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && nav.classList.contains('open')) setOpen(false);
+  });
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 720 && nav.classList.contains('open')) setOpen(false);
   });
 })();
